@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    width: 100%;
+    color: white;
+    background-color: white;
+}
+
+h1{
+    font-family: sekuya;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+img{
+    max-height: 360px;
+    max-width: 360px;
+}
+
+p{
+    font-size: 15px;
+    color: white;
+}
+
+button{
+    background-color: white;
+    color: black;
+    font-family: poppins;
+    font-weight: 700;
+    font-style: normal;
+    width: 220px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #e4e4e4;
+}
+
+button:hover{
+    background-color: rgb(28 100 242);
+    transform: scale(1.1);
+    cursor: pointer;
+    color: white;
+}
+
+/*-------------------------------HEADER-------------------------------*/
+
+.header-AFA{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 560px;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.div_regresar-AFA{
+    position: fixed;
+    left: 5%;
+}
+
+/*-------------------------------MAIN-------------------------------*/
+
+.section_compra_producto-AFA{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 120px;
+}
+
+.contenedor_producto-AFA{
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 150px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.div_img-AFA{
+    padding: 25px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.div_caption_producto-AFA{
+    background-color: white;
+    color: black;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.titulo_producto-AFA{
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.h3_marca-AFA{
+    color: rgb(28 100 242);
+}
+
+.detalle-AFA{
+    color: black;
+}
+
+
+/*-------------------------------FOOTER-------------------------------*/
+
+.footer-AFA{
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 500px;
+}
+
+.imgpago-AFA{
+    max-width: 60px;
+    max-height: 36px;
+    border-radius: 5px;
+}
+
+.imgsocial-AFA{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.first_foot-AFA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 260px;
+}
+
+.info_general_footer-AFA{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.redes-AFA{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.a_redes-AFA{
+    background-color: white;
+    border-radius: 150px;
+}
+
+.info_pago-AFA{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.second_foot-AFA{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 155px;
+    padding-bottom: 12px;
+}
+
+@media (max-width: 420px){
+    
+    h1{
+        font-size: 15px;
+    }
+
+    .header-AFA{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section_compra_producto-AFA{
+        padding: 100px;
+    }
+
+    .div_regresar-AFA{
+        display: flex;
+        position: unset;
+    }
+
+    img{
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .div_img-AFA{
+        padding: 15px;
+    }
+
+    .contenedor_producto-AFA{
+        gap: 0px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .div_caption_producto-AFA{
+        gap: 8px;
+    }
+
+    .titulo_producto-AFA{
+        font-size: 25px;
+    }
+
+/*-------------------FOOTER-------------------*/
+
+    .footer-AFA{
+        height: 620px;
+    }
+
+    .first_foot-AFA{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .info_general_footer-AFA{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info_pago-AFA{
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .redes-AFA{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50px;
+        gap: 10px;
+    }
+
+    .second_foot-AFA{
+        padding: 15px;
+        margin-top: 250px;
+    }
+
+    a{
+        text-align: start;
+        margin: 3px;
+    }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0; /* Totalmente invisible */
+    transform: translateY(30px); /* Comienza 30px abajo */
+  }
+  100% {
+    opacity: 1; /* Totalmente visible */
+    transform: translateY(0); /* Sube a su posición original */
+  }
+}

@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    font-family: poppins;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-AFA{
+    background-color: black;
+    background-size: contain;
+}
+
+h1{
+    font-family: sekuya;
+}
+
+button{
+    font-family: poppins;
+    font-weight: 800;
+    background-color: white;
+    border-radius: 25px;
+    height: 32px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*------------------------------ENCABEZADO------------------------------*/
+
+.header_navegador-AFA{
+    background-color: rgba(128, 128, 128, 0.5);
+    color: white;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 970px;
+    height: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 50px;
+    z-index: 9999;
+}
+
+.div_on_header-AFA{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.GameSpace-AFA{
+    font-family: sekuya;
+    margin: 0px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.b_comprar{
+    font-family: poppins;
+    font-weight: 700;
+    font-style: normal;
+    width: 150px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.b_comprar:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/*------------------------------ENCABEZADO------------------------------*/
+
+/*------------------------------HOME------------------------------*/
+
+.section_home-AFA{
+    background-image: url(../assets/space.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_titulo-AFA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 150px;
+    animation-name: aparecerYDeslizar;
+    animation-duration: 1.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.universo-AFA {
+    margin: 0;
+    line-height: 1;
+}
+
+.spangaming-AFA {
+    font-family: sekuya;
+    font-size: 80px;
+    display: block;
+    margin-top: -10px;
+    
+}
+
+.div_conocenos-AFA{
+    margin-top: 60px;
+    gap: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.b_conocenos-AFA{
+    font-family: poppins;
+    font-weight: 700;
+    font-style: normal;
+    width: 220px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.b_conocenos-AFA:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*------------------------------HOME------------------------------*/
+
+/*------------------------------MISION_VISON------------------------------*/
+
+.mv-AFA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.mision_title-AFA{
+    padding: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.mision_vision-AFA{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px;
+    gap: 100px;
+}
+
+h2{
+    font-family: sekuya;
+}
+
+.mision-AFA{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 35px;
+    text-align: center;
+    gap: 15px;
+    width: 600px;
+}
+
+.vision-AFA{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 35px;
+    text-align: center;
+    gap: 15px;
+    width: 600px;
+
+}
+
+.div_market-AFA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+
+}
+
+/*------------------------------MISION_VISION------------------------------*/
+
+/*------------------------------SECTION PRODUCTOS------------------------------*/
+
+
+.section_productos-AFA{
+    padding: 15px;
+    padding-top: 100px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: aparecerYDeslizar;
+    animation-duration: 1.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.section_productos_title-AFA{
+    font-family: sekuya;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.promo_title-AFA{
+    font-family: sekuya;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.promoproducto-AFA{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 25px;
+}
+
+.divpromoproducto{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.destacadosdiv-AFA{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 25px;
+}
+
+.promosdiv-AFA{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 25px;
+}
+
+.div_masproducto-AFA{
+    margin-top: 150px;
+}
+
+.b_masproductos-AFA{
+    font-family: poppins;
+    font-weight: 700;
+    font-style: normal;
+    width: 220px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.b_masproductos-AFA:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/* ------------------------SECTION PRODUCTOS------------------------ */
+
+/* ------------------------FOOTER------------------------ */
+
+.footer-AFA{
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 500px;
+}
+
+.imgpago-AFA{
+    max-width: 60px;
+    max-height: 36px;
+    border-radius: 5px;
+}
+
+.imgsocial-AFA{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.first_foot-AFA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 260px;
+}
+
+.info_general_footer-AFA{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.redes-AFA{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.a_redes-AFA{
+    background-color: white;
+    border-radius: 150px;
+}
+
+.info_pago-AFA{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.second_foot-AFA{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 155px;
+    padding-bottom: 12px;
+}
+
+/* ------------------------FOOTER------------------------ */
+
+/* ------------------------ESTILO_DE_TARJETA------------------------ */
+
+.tarjeta_producto{
+    background-color: white;
+    width: 256px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.tarjeta_producto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+}
+
+.imagen_tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_producto{
+    max-width: 172px;
+    max-height: 172px;
+    margin: 20px;
+}
+
+.info_tarjeta{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_tarjeta{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    margin-top: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.precio_tarjeta{
+    color: black;
+    font-family: inter, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+sup{
+    font-size: 20px;
+}
+
+
+/* ------------------------ESTILO_DE_TARJETA------------------------ */
+
+
+/*----------------------------------MEDIA QUERY----------------------------------*/
+
+@media (max-width: 420px){
+
+    h1{
+        font-size: 15px;
+    }
+
+    .main-AFA{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    button{
+        font-family: poppins;
+        font-weight: 800;
+        background-color: white;
+        border-radius: 25px;
+        height: 32px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .header_navegador-AFA{
+        width: 330px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .div_on_header-AFA{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .gm_header-AFA{
+        font-size: 10px;
+    }
+
+    .ul_nav{
+        gap: 2px;
+    }
+
+    .div_titulo-AFA{
+        font-size: 10px;
+    }
+
+    .spangaming-AFA{
+        font-size: 50px;
+    }
+
+    .mision_vision-AFA{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .mision-AFA{
+        width: 305px;
+    }
+
+    .vision-AFA{
+        width: 305px;
+    }
+
+    .promoproducto-AFA{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .div_market-AFA{
+        padding: 48px;
+        margin-top: 25px;
+    }
+
+    .promosdiv-AFA{
+        justify-content: center;
+    }
+
+    .destacadosdiv-AFA{
+        justify-content: center;
+    }
+
+    .div_masproducto-AFA{
+        margin-top: 50px;
+    }
+
+    .footer-AFA{
+        height: 620px;
+    }
+
+    .first_foot-AFA{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .info_general_footer-AFA{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info_pago-AFA{
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .redes-AFA{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50px;
+        gap: 10px;
+    }
+
+    .second_foot-AFA{
+        padding: 15px;
+        margin-top: 250px;
+    }
+
+    a{
+        text-align: start;
+        margin: 3px;
+    }
+}
+
+
+/* KEY FRAMES */
+
+@keyframes deslizarAbajo {
+    from {
+        transform: translateY(-100%); /* Empieza fuera de la pantalla (arriba) */
+    }
+    to {
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
+
+@keyframes aparecerYDeslizar {
+    0% {
+        opacity: 0; /* Totalmente invisible */
+        transform: translateY(-50px); /* Empieza 50px más arriba */
+    }
+    100% {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
